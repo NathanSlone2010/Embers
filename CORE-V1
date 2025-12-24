@@ -1,0 +1,28 @@
+print("残り火 [Nokoribi] | EMBERS.")
+print("\n The first game of Nathan T.S [Tiktok: void_developers]")
+print("\n VERS. 1.00.00")
+
+character_health = 100
+character_armor = 50
+
+while character_health > 0:
+    print(f"Health: {character_health} | Armor: {character_armor}")
+    print("\n You wake up, a chicken pecking you. You have no memory of what happened, but you see 4 paths.")
+    print("1. Left Path")
+    print("2. Path Ahead")
+    print("3. Right Path")
+    print("4, Path Behind You")
+
+    choice = input("Input: ")
+
+    if choice == "1":
+        print("\n You walk the left path, finding a bridge. Do yo want to drink water? Y/N")
+
+    if choice == "2":
+        print("\n You walk the path ahead, coming across a dead corpse, a sword is on his body. Do you take it? Y/N")
+    
+    if choice == "3":
+        print("\n You walk the path to the right. You come across another person. Ask for information about the best path the next choice? Y/N")
+    
+    if choice == "4":
+        print("\n You come across a river, after walking thrpugh, you see a house. Enter? Y/N")
