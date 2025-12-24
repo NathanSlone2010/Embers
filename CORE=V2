@@ -1,0 +1,107 @@
+print("残り火 [Nokoribi] | EMBERS.")
+print("\n The first game of Nathan T.S [Tiktok: void_developers]")
+print("Date of Production: December 24th, 2025 [5:49AM]")
+print("\n VERS. 1.02.02")
+
+character_health = 100
+character_armor = 50
+defense = 10
+
+print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense}")
+print("\n CHAPTER 1 | You wake up, a chicken pecking you. You have no memory of what happened, but you see 4 paths.")
+print("1. Left Path")
+print("2. Path Ahead")
+print("3. Right Path")
+print("4, Path Behind You")
+
+choice = input("Input: ")
+
+if choice == "1":
+    inner_choice = input("\n You walk the left path, finding a bridge. Do you want to drink water? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("You drink the water and continue on. Coming across a house...")
+    elif inner_choice == "n":
+        print("Suspicious of the water, you decide not to drink it. You see a house...")
+
+if choice == "2":
+    inner_choice = input("\n You walk the path ahead, coming across a dead corpse, a sword is on his body. Do you take it? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("You take the sword, giving you the chance of defense! You look further out in the woods and see a house. You enter it, no one is here [Press E to continue]")
+    elif inner_choice == "n":
+        print("You look at the sword, deciding you shouldn't take it. Walking further left, you see a house and enter it, no one is here [Press E to continue]")
+
+if choice == "3":
+    inner_choice = input("\n You walk the path to the right. You come across another person. Ask for information about the best path the next choice? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("The man says to you: 'Sorry, fella! I'm just passing through. I don't know what would be best for 'ya! There is an abandoned house over 'yonder!' So whe  he says that, you wal off, finding the house. You enter it, seiing it is abandoned as he said [Press E to continue]")
+    elif inner_choice == "n":
+        print("You igore the man, but notice a house. You enter the house, seeing no one is here [Press E to continue]")
+
+if choice == "4":
+    print("\n You come across a river, after walking through, you see a house. You see it is empty [Press E to continue]")
+
+while True:
+    cont = input("\n [Press E to continue]: ")
+    if cont.lower() == "e":
+        break
+    else:
+        print("Press E to continue.")
+
+print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense}")
+print("CHAPTER 2 | You collect what you have and continue on the path. After walking for days. 3:24AM. The break in the road forks into two paths.")
+print("1. Left Path")
+print("2. Right Path")
+print("3. Off Path")
+
+choice = input("Input: ")
+
+if choice == "1":
+    inner_choice = input("You walk down the left path, eventually making it to the field of flowers. It brings back a memory. A woman with black hair and fair skin. Do you pick a flower in case you see that mystery woman? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("You pick the flowers swiftly, taking in their smell, but quickly venturing off through the field. You see a shop, you decide to ask them where the nearest village is [Press E to continue]")
+    elif inner_choice == "n":
+        print("You pay no attention tp the sudden memory and venture on, finding a shop. You decide to ask an important qeustion [Press E to continue]")
+
+if choice == "2":
+    inner_choice = input("You go through the right path, going through a swamp. Your clothes get muddy, you see creatures lurking. By sheer luck and will-power, you manage to dodge being spotted by them. You meet a shop keeper and you enter his shop with him to ask a qeustion [Press E to continue]: ").strip().lower()
+
+if choice == "3":
+    inner_choice = input("Walking through the middle of both paths, ignoring tha dirt roads. You see a person in the right path, having to dodge animals. Yo chucl=kle, but stop due to seeing a shop. You enter it to ask an important qeustion [Press E to continue]: ").strip().lower()
+
+while True:
+    cont = input("\n [Press E to continue]: ")
+    if cont.lower() == "e":
+        break
+    else:
+        print("\n Press E to continue")
+
+print("CHAPTER 3 | You travel down the path, According tp the shop keeper, it will take days to get there... Hours go by, night falls, you start to get tired.. Two options are availale...")
+print("1. Set up the ten next to the dirt road.")
+print("2. Set up the tent next to the tree")
+
+choice = input("Input: ")
+
+if choice == "1":
+    inner_choice = input("You set up the tent next to the road. Do you sleep? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("You fall asleep, you wake up. a man attacking you. You manage to fend him off.")
+    elif inner_choice == "n":
+        print("You don't fall asleep, a man attacks you from outside a tent with a sword, he misses, but after a tense fight, you fend him off. You are bleeding heavily.")
+
+if choice == "2":
+    inner_choice = input("You set the tent up at the tree, feeling safer you drift off asleep. Do you fight the sleepiness? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("You stay awake. A man  comes in the tent, seeing you, he stabs you with the dagger, but you manage to fend him off. You are bleeding.")
+    elif inner_choice == "n":
+        print("You fall asleep. But due to a loud noise, you wake up. A man looking around your stuff in the tent. Noticing you are awake, he stabs you. You barely fend him of. You are bleeding.")
+
+total1 = character_health - 10
+total2 = character_armor - 50
+print(f"Health: {total1} | Armor: {total2}")
+
+while True:
+    cont = input("\n [Press E to continue]: ")
+    if cont.lower() == "e":
+        break
+    else:
+        print("\n Press E to continue")
