@@ -12,7 +12,7 @@ print("\n CHAPTER 1 | You wake up, a chicken pecking you. You have no memory of 
 print("1. Left Path")
 print("2. Path Ahead")
 print("3. Right Path")
-print("4, Path Behind You")
+print("4. Path Behind You")
 
 choice = input("Input: ")
 
