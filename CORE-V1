@@ -17,15 +17,26 @@ print("4, Path Behind You")
     
 choice = input("Input: ")
 
+   if choice == "1":
+        print("\n You walk the left path, finding a bridge. Do yo want to drink water? Y/N")
+        if choice == "y":
+            print("You drink the water and continue on. Coming across a house. You enter it, no one is here. [Type E to continue]")
+        if choice == "n":
+            print("Suspicious of the water, you decide not to drink it. You see a house and enter it, no one is here. [Type E to continue]")
 
-if choice == "1":
-        print("\n You walk the left path, finding a bridge. Do you want to drink water? Y/N")
-
-if choice == "2":
+    if choice == "2":
         print("\n You walk the path ahead, coming across a dead corpse, a sword is on his body. Do you take it? Y/N")
-    
-if choice == "3":
+        if choice == "y":
+            print("You take the sword, giving you the chance of defense! You look further out in the woods and see a house. You enter it, no one is here [Press E to continue]")
+        if choice == "n":
+            print("You look at the sword, deciding you shouldn't take it. Walking further left, you see a house and enter it, no one is here [Press E to continue]")
+
+    if choice == "3":
         print("\n You walk the path to the right. You come across another person. Ask for information about the best path the next choice? Y/N")
-    
-if choice == "4":
-        print("\n You come across a river, after walking thrpugh, you see a house. Enter? Y/N")
+        if choice == "y":
+            print("The man says to you: 'Sorry, fella! I'm just passing through. I don't know what would be best for 'ya! There is an abandoned house over 'yonder!' So whe  he says that, you wal off, finding the house. You enter it, seiing it is abandoned as he said [Press E to continue]")
+        if choice == "n":
+            print("You igore the man, but notice a house. You enter the house, seeing no one is here [Press E to continue]")
+
+    if choice == "4":
+        print("\n You come across a river, after walking through, you see a house. You see it is empty [Press E to continue]")
