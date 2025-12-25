@@ -1,13 +1,14 @@
 print("残り火 [Nokoribi] | EMBERS.")
 print("\n The first game of Nathan T.S [Tiktok: void_developers]")
 print("Date of Production: December 24th, 2025 [5:49AM]")
-print("\n VERS. 2.04.01")
+print("\n VERS. 2.05.02")
 
 character_health = 100
 character_armor = 50
+honor = 50
 defense = 10
 
-print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense}")
+print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense} | Honor: {honor}")
 print("\n CHAPTER 1 | You wake up, a chicken pecking you. You have no memory of what happened, but you see 4 paths.")
 print("1. Left Path")
 print("2. Path Ahead")
@@ -48,7 +49,7 @@ while True:
         print("Press E to continue.")
 
 
-print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense}")
+print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense} | Honor: {honor}")
 print("CHAPTER 2 | You collect what you have and continue on the path. After walking for days. 3:24AM. The break in the road forks into two paths.")
 print("1. Left Path")
 print("2. Right Path")
@@ -67,7 +68,7 @@ if choice == "2":
     inner_choice = input("You go through the right path, going through a swamp. Your clothes get muddy, you see creatures lurking. By sheer luck and will-power, you manage to dodge being spotted by them. You meet a shop keeper and you enter his shop with him to ask a qeustion [Press E to continue]").strip().lower()
 
 if choice == "3":
-    inner_choice = input("Walking through the middle of both paths, ignoring tha dirt roads. You see a person in the right path, having to dodge animals. Yo chuckle, but stop due to seeing a shop. You enter it to ask an important qeustion [Press E to continue]").strip().lower()
+    inner_choice = input("Walking through the middle of both paths, ignoring the dirt roads. You see a person in the right path, having to dodge animals. Yo chuckle, but stop due to seeing a shop. You enter it to ask an important qeustion [Press E to continue]").strip().lower()
 
 while True:
     cont = input("\n [Press E to continue]: ")
@@ -99,7 +100,8 @@ if choice == "2":
 
 total1 = character_health - 10
 total2 = character_armor - 50
-print(f"Health: {total1} | Armor: {total2}")
+total3 = honor - 0
+print(f"Health: {total1} | Armor: {total2} | Honor: {honor}")
 
 while True:
     cont = input("\n [Press E to continue]: ")
@@ -127,12 +129,13 @@ if choice == "2":
     if inner_choice == "y":
         print("Looking at the pendant, you feel shocked, as it is the woman you faintly remember. You qeustio yourself, wondering who she is.")
     elif inner_choice == "n":
-        print("Yo ignore it, drifting off to sleep as fast as you can.") 
+        print("You ignore it, drifting off to sleep as fast as you can.") 
 
 
-total1 = character_health + 10
+total1 = character_health + 0
 total2 = character_armor + 50
-print(f"Health: {total1} | Armor: {total2}")
+total3 = honor - 5
+print(f"Health: {total1} | Armor: {total2} | Honor: {honor}")
 
 while True:
     cont = input("\n [Press E to continue]: ")
@@ -160,10 +163,11 @@ if choice == "2":
 
 total1 = character_health - 0
 total2 = character_armor - 1.2
-print(f"Health: {total1} | Armor: {total2}")
+total3 = honor - 0
+print(f"Health: {total1} | Armor: {total2} | Honor: {honor}")
 
 while True:
-    cont = input("\n [Press E to continue]")
+    cont = input("\n [Press E to continue]: ")
     if cont.lower() == "e":
         break
     else:
