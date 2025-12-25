@@ -1,7 +1,7 @@
 print("残り火 [Nokoribi] | EMBERS.")
 print("\n The first game of Nathan T.S [Tiktok: void_developers]")
 print("Date of Production: December 24th, 2025 [5:49AM]")
-print("\n VERS. 1.02.02")
+print("\n VERS. 2.03.01")
 
 character_health = 100
 character_armor = 50
@@ -63,10 +63,10 @@ if choice == "1":
         print("You pay no attention tp the sudden memory and venture on, finding a shop. You decide to ask an important qeustion [Press E to continue]")
 
 if choice == "2":
-    inner_choice = input("You go through the right path, going through a swamp. Your clothes get muddy, you see creatures lurking. By sheer luck and will-power, you manage to dodge being spotted by them. You meet a shop keeper and you enter his shop with him to ask a qeustion [Press E to continue]: ").strip().lower()
+    inner_choice = input("You go through the right path, going through a swamp. Your clothes get muddy, you see creatures lurking. By sheer luck and will-power, you manage to dodge being spotted by them. You meet a shop keeper and you enter his shop with him to ask a qeustion [Press E to continue]").strip().lower()
 
 if choice == "3":
-    inner_choice = input("Walking through the middle of both paths, ignoring tha dirt roads. You see a person in the right path, having to dodge animals. Yo chucl=kle, but stop due to seeing a shop. You enter it to ask an important qeustion [Press E to continue]: ").strip().lower()
+    inner_choice = input("Walking through the middle of both paths, ignoring tha dirt roads. You see a person in the right path, having to dodge animals. Yo chuckle, but stop due to seeing a shop. You enter it to ask an important qeustion [Press E to continue]").strip().lower()
 
 while True:
     cont = input("\n [Press E to continue]: ")
@@ -75,7 +75,7 @@ while True:
     else:
         print("\n Press E to continue")
 
-print("CHAPTER 3 | You travel down the path, According tp the shop keeper, it will take days to get there... Hours go by, night falls, you start to get tired.. Two options are availale...")
+print("CHAPTER 3 | You travel down the path, According to the shop keeper, it will take days to get there... Hours go by, night falls, you start to get tired.. Two options are availale...")
 print("1. Set up the ten next to the dirt road.")
 print("2. Set up the tent next to the tree")
 
@@ -105,3 +105,18 @@ while True:
         break
     else:
         print("\n Press E to continue")
+
+print("CHAPTER 4 | You take a drink of water, you look at your wounds amazed, the wound started closing rapidly, even the blood is dryon quicker. You get up, walking away. You see a masked stranger on the side of the road.").strip().lower()
+print("1. Talk")
+print("2. ignore")
+
+if choice == "1":
+    inner_choice = input("The masked man says: 'Wha- Wait! You are that knight that behea- beheaded my wife! Get away from me, monster!' He runs off, scared, not looing back. Feeling defeated, you walk off, do you enter the inn ahead? Y/N").strip().lower()
+    if inner_choice == "y":
+        print("You enter the inn and pay for a room key. 'Finally, a good nights rest")
+    elif inner_choice == "n":
+        print("You ignore the tavern, realizing you have no cash. You go to the alley-way and sleep.").strip().lower()
+    
+total1 = character_health + 10
+total2 = character_armor + 50
+print(f"Health: {total1} | Armor: {total2}")
