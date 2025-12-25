@@ -1,7 +1,7 @@
 print("残り火 [Nokoribi] | EMBERS.")
 print("\n The first game of Nathan T.S [Tiktok: void_developers]")
 print("Date of Production: December 24th, 2025 [5:49AM]")
-print("\n VERS. 2.03.01")
+print("\n VERS. 2.04.01")
 
 character_health = 100
 character_armor = 50
@@ -47,6 +47,7 @@ while True:
     else:
         print("Press E to continue.")
 
+
 print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense}")
 print("CHAPTER 2 | You collect what you have and continue on the path. After walking for days. 3:24AM. The break in the road forks into two paths.")
 print("1. Left Path")
@@ -74,6 +75,7 @@ while True:
         break
     else:
         print("\n Press E to continue")
+
 
 print("CHAPTER 3 | You travel down the path, According to the shop keeper, it will take days to get there... Hours go by, night falls, you start to get tired.. Two options are availale...")
 print("1. Set up the ten next to the dirt road.")
@@ -106,17 +108,63 @@ while True:
     else:
         print("\n Press E to continue")
 
-print("CHAPTER 4 | You take a drink of water, you look at your wounds amazed, the wound started closing rapidly, even the blood is dryon quicker. You get up, walking away. You see a masked stranger on the side of the road.").strip().lower()
+
+print("CHAPTER 4 | You take a drink of water, you look at your wounds amazed, the wound started closing rapidly, even the blood is dryon quicker. You get up, walking away. You see a masked stranger on the side of the road.")
 print("1. Talk")
 print("2. ignore")
 
+choice = input("Input: ")
+
 if choice == "1":
-    inner_choice = input("The masked man says: 'Wha- Wait! You are that knight that behea- beheaded my wife! Get away from me, monster!' He runs off, scared, not looing back. Feeling defeated, you walk off, do you enter the inn ahead? Y/N").strip().lower()
+    inner_choice = input("The masked man says: 'Wha- Wait! You are that knight that behea- beheaded my wife! Get away from me, monster!' He runs off, scared, not looing back. Feeling defeated, you walk off, do you enter the inn ahead? Y/N: ").strip().lower()
     if inner_choice == "y":
         print("You enter the inn and pay for a room key. 'Finally, a good nights rest")
     elif inner_choice == "n":
         print("You ignore the tavern, realizing you have no cash. You go to the alley-way and sleep.").strip().lower()
-    
+
+if choice == "2":
+    inner_choice = input("You walk past him. Heading to town. You fall asleep in an alley-way. Do you look at the pendant in your pocket? Y/N: ").strip().lower() 
+    if inner_choice == "y":
+        print("Looking at the pendant, you feel shocked, as it is the woman you faintly remember. You qeustio yourself, wondering who she is.")
+    elif inner_choice == "n":
+        print("Yo ignore it, drifting off to sleep as fast as you can.") 
+
+
 total1 = character_health + 10
 total2 = character_armor + 50
 print(f"Health: {total1} | Armor: {total2}")
+
+while True:
+    cont = input("\n [Press E to continue]: ")
+    if cont.lower() == "e":
+        break
+    else:
+        print("\n Press E to continue")
+
+
+print("CHAPTER 5 | After the night of sleep, you wake up. The name of the woman comes back to you.. Roslin... The woman you killed the night of the seige. With guilt, you stare off into space, but you hear screaming. You decide to check out the disturbance? Y/N")
+print("1. Yes")
+print("2. No")
+
+choice = input("Input: ")
+
+if choice == "1":
+    inner_choice = input("You see a woman getting assualted by a woman, the man is about to do horrid things to her. Do you interveine? Y/N: ").strip().lower()
+    if inner_choice == "y":
+        print("You grab the man, yanking him off her. He punches you [-1.2HP], but you punch him back. The police arrives, pulling you off him, and arresting him.")
+    elif inner_choice == "n":
+        print("You turn around, the man notices you. He throws the woman to the ground, stomping her tomach. He runs up to you, he punches you [-1.2HP]. You punch him back, the police grabs and throws him to the ground.")
+
+if choice == "2":
+    inner_choice = input("You ignore the screaming. But as you get up and walk out of the alley-way, a man hits you while running, knocking you to the grond where you hit your head on a small rock [-1.2HP]")
+
+total1 = character_health - 0
+total2 = character_armor - 1.2
+print(f"Health: {total1} | Armor: {total2}")
+
+while True:
+    cont = input("\n [Press E to continue]")
+    if cont.lower() == "e":
+        break
+    else:
+        print("\n Press E to continue")
