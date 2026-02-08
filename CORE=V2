@@ -1,14 +1,14 @@
 print("残り火 [Nokoribi] | EMBERS.")
 print("\n The first game of Nathan T.S [Tiktok: void_developers]")
 print("Date of Production: December 24th, 2025 [5:49AM]")
-print("\n VERS. 2.07.02")
+print("\n VERS. 2.07.03")
 print("RATING: 14+")
 
 character_health = 100
 character_armor = 50
-defense = 10
+character_defense = 10
 
-print(f"Health: {character_health} | Armor: {character_armor} | Defense: {defense}")
+print(f"Health: {character_health} | Armor: {character_armor} | Max Defense: {character_defense}")
 print("\n CHAPTER 1 | You wake up, a chicken pecking you. You have no memory of what happened, but you see 4 paths.")
 print("1. Left Path")
 print("2. Path Ahead")
@@ -34,9 +34,9 @@ if choice == "2":
 if choice == "3":
     inner_choice = input("\n You walk the path to the right. You come across another person. Ask for information about the best path the next choice? Y/N: ").strip().lower()
     if inner_choice == "y":
-        print("The man says to you: 'Sorry, fella! I'm just passing through. I don't know what would be best for 'ya! There is an abandoned house over 'yonder!' So whe  he says that, you wal off, finding the house. You enter it, seiing it is abandoned as he said [Press E to continue]")
+        print("The man says to you: 'Sorry, fella! I'm just passing through. I don't know what would be best for 'ya! There is an abandoned house over 'yonder!' So when he says that, you walk off, finding the house. You enter it, seeing it is abandoned as he said [Press E to continue]")
     elif inner_choice == "n":
-        print("You igore the man, but notice a house. You enter the house, seeing no one is here [Press E to continue]")
+        print("You ignore the man, but notice a house. You enter the house, seeing no one is here [Press E to continue]")
 
 if choice == "4":
     print("\n You come across a river, after walking through, you see a house. You see it is empty [Press E to continue]")
@@ -79,7 +79,7 @@ while True:
 
 
 print("CHAPTER 3 | You travel down the path, According to the shop keeper, it will take days to get there... Hours go by, night falls, you start to get tired.. Two options are availale...")
-print("1. Set up the ten next to the dirt road.")
+print("1. Set up the tent next to the dirt road.")
 print("2. Set up the tent next to the tree")
 
 choice = input("Input: ")
@@ -208,3 +208,9 @@ while True:
         break
     else:
         print("\n Press E to continue")
+        
+        
+print("Chapter 7 | Making it to the barracks, the men looks shocked. The woman in the medical bed looks wide at you. You remember her, at last... Did you take the flower? Y/N: ").strip().lower()
+print("1. Yes")
+print("2. No")
+
